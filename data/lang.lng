@@ -1,0 +1,14 @@
+<?php
+
+return [
+
+	'error_notfound_comments' => 'Коментариев еще нет.',
+
+	'error_files_upload' => 'Ошибка при загрузке файла',
+	'error_files_size' => 'Превышен максимальный размер файла',
+	'error_files_extension' => 'Неподдерживаемый формат файла',
+	'error_files_name' => 'Недопустимое имя файла',
+
+	'comment_notfound_id' => 'Указанный комментарий не найден в базе данных.',
+
+];

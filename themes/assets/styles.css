@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* TEXT */
+.text.fs2x, .text .fs2x {line-height: 22px;}
+.text.fs, .text .fs {line-height: 24px;}
+.text, figure {
+	line-height: var(--line);
+	font-size: var(--font-small);
+}
+
+	/* FIGURE */
+	.text figure {
+		text-align: center;
+		margin: 0 auto;
+		width: auto;
+		max-width: 100%;
+	}
+
+	/* HEADER */
+	.text h1, .text h2, .text h3, .text h4, .text h5, .text h6 {
+		padding-bottom: var(--indent-small);
+	}
+
+	/* IMAGES */
+	.text img, figure img {
+		width: auto;
+		text-align: center;
+		line-height: 0;
+		margin: 0 auto;
+		display: inline-block;
+		max-width: 100%;
+		height: auto;
+		max-height: 100%;
+		border-radius: var(--radius);
+	}
+
+	/* UL, LI, OL LISTS */
+	.text ul, .text ol {padding-left: var(--indent-small);display: block;}
+	.text ul li, .fr-view ul li {list-style: disc inside !important;}
+	.text ol li, .fr-view ol li {list-style: decimal inside !important;}
+	.text ul li, .text ol li {padding: var(--indent-small) 0;}
+	.text ol ul, .text ul ul {padding-left: var(--indent-small);}
+
+	/* TABLE */
+	.text table {
+		width: 100%;
+		display: block;
+		overflow: auto;
+	}
+	.text table tbody, .text table thead {width: 100%;display: table;}
+	.text table:not(.noborder) tr:nth-child(even) {background: var(--shell);}
+
+		/* HEADER */
+		.text table thead {
+			background: var(--green);
+			color: var(--white);
+		}
+
+		/* ITEM */
+		.text table td, .text table th {
+			padding: 5px;
+		}
+
+/* COLORS */
+.cborder, .commentsRemove {color: var(--border);}
+.silver {color: var(--silver);}
+.red, .error, .commentsRemove:hover {color: var(--red);}
+.orange, .warning {color: var(--orange);}
+.green, .success {color: var(--green);}
+.chidden {color: var(--hidden);}
+
+/* MESSAGE */
+.message {border: 1px solid currentColor;}
+.message.error {background: rgba( var(--red-rgb), .2 );}
+.message.success {}
+.message.warning {}
+
+/* ADD COMMENTS */
+.comment, .addComments {
+	border-bottom: 1px solid var(--shell);
+}
+
+/* CAPTCHA */
+.captcha {line-height: 0;}
+.captcha:hover {cursor: pointer;}
+
+/* ERRNO */
+.errno:not(:focus) {
+	border-color: var(--red) !important;
+	color: var(--red) !important;
+}
+
+/* COMMENTS */
+.cName {margin-right: 8px;}
